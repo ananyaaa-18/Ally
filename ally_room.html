@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALLY - Rooms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="ally_room.css">
+
+</head>
+<body>
+
+<div class="app-container">
+    
+    <div class="top-controls">
+        <span>&times;</span>
+        <span class="minimize-icon">&mdash;</span>
+    </div>
+
+    <div class="room-page-content">
+
+        <button class="logout-button" onclick="logout();">
+         ➜] LOGOUT
+        </button>
+
+        <div class="header-section">
+            <img src="hiii-removebg-preview.png" class="logo-image" alt="Pixelated Rainbow Heart">
+            <h1 class="header-title">ALLY</h1>
+        </div>
+        
+        <div class="add-room-area">
+            <div class="form-group-custom">
+                <input type="text" id="room_name" class="custom-input" 
+                       placeholder="ENTER ROOM NAME" 
+                       onfocus="this.placeholder = ''" 
+                       onblur="this.placeholder = 'ENTER ROOM NAME'">
+            </div>
+
+
+
+            <button onclick="addRoom();" class="add-room-button-custom">
+                ADD ROOM <span class="heart-icon">♡</span>
+            </button>
+        </div>
+
+        <div class="trending-rooms-box">
+            <h3 class="trending-title">TRENDING ROOMS <span class="heart-icon">♡</span></h3>
+            <div id="output" class="room-list">
+                </div>
+        </div>
+    </div>
+
+    <div class="bottom-nav">
+        <span class="nav-arrow">&lt;</span>
+        <div class="nav-indicator-small"></div>
+        <span class="nav-arrow">&gt;</span>
+    </div>
+
+</div>
+
+<script src="ally_room.js"></script>
+</body>
+</html>

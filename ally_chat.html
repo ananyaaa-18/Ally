@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ALLY - Chat Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="ally_chat.css">
+
+</head>
+<body>
+
+<div class="app-container chat-container">
+    
+    <div class="top-controls">
+        <span class="close-icon">&times;</span>
+        <span class="minimize-icon">&mdash;</span>
+    </div>
+
+    <button class="logout-button" onclick="logout();">
+    ➜] LOGOUT
+    </button>
+
+    <div class="chat-page-content">
+
+        <div class="header-section">
+            <img src="hiii-removebg-preview.png" class="logo-image" alt="Pixelated Rainbow Heart">
+            <h1 class="header-title">ALLY</h1>
+        </div>
+        
+		<center>
+
+        	<div id="output" class="message-display-box">
+				<div class="swirl"> ────୨ৎ────</div>
+            		<div class="initial-message">Welcome to the room! Start chatting...</div>
+				<div class="swirl"> ────୨ৎ────</div>
+        	</div>
+
+		</center>
+
+        <div class="message-input-area">
+            
+            <input type="text" id="msg" class="message-input" 
+                   placeholder="TYPE YOUR MESSAGE HERE ♡" 
+                   onfocus="this.placeholder = ''" 
+                   onblur="this.placeholder = 'TYPE YOUR MESSAGE HERE ♡'">
+            
+            <button onclick="send();" class="send-button-custom">
+                SEND ♡ ᯓ➤
+            </button>
+        </div>
+    </div>
+
+    <div class="bottom-nav chat-nav">
+        <span class="nav-arrow">&lt;</span>
+        <div class="nav-indicator-small pink-fill"></div>
+        <span class="nav-arrow">&gt;</span>
+    </div>
+
+</div>
+
+<script src="ally_chat.js"></script>
+</body>
+</html>
