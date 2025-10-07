@@ -39,9 +39,7 @@ But through these challenges, I learned a lot about:
 
 ---
 
-##  ╭──────────.★..─╮
-##      What’s Next
-##  ╰─..★.──────────╯
+## 🗓️🌱🗒🖊 What's Next?
 I plan to keep improving Ally by:
 - Adding user authentication (sign-up & login)
 - Enhancing the UI with emojis and themes
@@ -49,13 +47,13 @@ I plan to keep improving Ally by:
 
 ---
 
-## 🌐 Live Demo
+## ₊✩‧₊˚౨ৎ˚₊✩‧₊ Live Demo
 🔗 [Click here to try Ally](https://ananyaaa-18.github.io/Ally/index.html)
 ---
 
-## 💖 Acknowledgements
+## ♡ Acknowledgements
 Special thanks to my mentors, friends, and the Hack Club community for inspiring me to build and ship my first chat app!
 
 ---
 
-Made with 💕 by **Ananya R.**
+Made with ‪‪❤︎‬ by **Ananya ⋆˚✿˖°**
