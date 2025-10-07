@@ -1,6 +1,5 @@
-function redirectToPagename(name)
+function redirectToRooms()
 {
-  console.log(name);
-  localStorage.setItem("room_name", name);
-    window.location = "ally_page.html";
+  window.location = "ally_room.html";
 }
+
