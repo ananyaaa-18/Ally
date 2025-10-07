@@ -29,9 +29,8 @@ function addRoom()
     purpose : "adding room name"
   });
 
-    localStorage.setItem("room_name", room_name);
-    
-    window.location = "ally_chat.html";
+
+    redirectToChatName(room_name);
 }
 
 function getData() {  firebase.database().ref("/").on('value', function(snapshot) {
@@ -40,7 +39,7 @@ function getData() {  firebase.database().ref("/").on('value', function(snapshot
        childKey  = childSnapshot.key;
        room_names = childKey;
        console.log("Room Name - " + room_names);
-       row = "<div class='room_name' id="+room_names+" onclick='redirectToPageName(this.id)' >#"+ room_names +"</div><hr>";
+       row = "<div class='room_name' id="+room_names+" onclick='redirectToChatName(this.id)' >#"+ room_names +"</div><hr>";
        document.getElementById("output").innerHTML += row;
     });
   });
@@ -49,11 +48,11 @@ function getData() {  firebase.database().ref("/").on('value', function(snapshot
 
 getData();
 
-function redirectToPageName(name)
+function redirectToChatName(name)
 {
   console.log(name);
   localStorage.setItem("room_name", name);
-    window.location = "ally_page.html";
+    window.location = "ally_chat.html";
 }
 
 
