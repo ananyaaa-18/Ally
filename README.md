@@ -40,7 +40,7 @@ But through these challenges, I learned a lot about:
 ---
 
 ##  ╭──────────.★..─╮
-       *What’s Next*
+##      What’s Next
 ##  ╰─..★.──────────╯
 I plan to keep improving Ally by:
 - Adding user authentication (sign-up & login)
