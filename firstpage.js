@@ -1,5 +1,5 @@
-function redirectToRooms()
+function redirectToSigninPage()
 {
-  window.location = "ally_room.html";
+  window.location = "ally_page.html";
 }
 
