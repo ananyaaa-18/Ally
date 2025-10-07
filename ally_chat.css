@@ -269,7 +269,7 @@ body {
 }
 
 .message-display-box {
-    width: 90%;
+    width: 400px;
     max-width: 400px;
     height: 350px; 
     background-color: var(--message-box-pink); 
